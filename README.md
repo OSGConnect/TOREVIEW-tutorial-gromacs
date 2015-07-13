@@ -5,7 +5,7 @@
 
 [GROMACS](http://www.gromacs.org/) is a  molecular dynamics simulation program.  In this tutorial, we learn how to run 
 GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in implicit water.  
-![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png "1CTA Dimer in Water" {width=40px height=40px})
+![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png, "1CTA Dimer in Water", width=10, height=40)
 
 ## GROMACS tutorial files
 
@@ -15,7 +15,7 @@ It is easiest to start with the `tutorial` command. In the command prompt, type
  
 This will create a directory `tutorial-gromacs`. Inside the directory, you will see the following files
 
-    1cta_nvt.tpr        # GROMACS binary input file
+    1cta_nvt.tpr          # GROMACS binary input file
     gromacs_job.sh        # Job execution script file
     gromacs_job.submit    # Condor job submission script file
 
