@@ -1,0 +1,17 @@
+Universe = vanilla
+Executable = gromacs_nvt_job0.sh
+
+transfer_input_files = 1cta_nvt_0.tpr
+should_transfer_files=Yes
+when_to_transfer_output = ON_EXIT
+
+request_memory = 2GB 
+request_cpus = 1
+
+output        = job.output.job0
+error         = job.error.job0
+log           = job.log.job0
+
+requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
+Queue 1
+
