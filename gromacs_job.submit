@@ -1,5 +1,5 @@
 Universe = vanilla
-Executable = gromacs_nvt.sh
+Executable = gromacs_job.sh
 
 transfer_input_files = 1cta_nvt.tpr
 should_transfer_files=Yes
