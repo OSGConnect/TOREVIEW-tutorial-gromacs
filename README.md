@@ -5,7 +5,7 @@
 
 [GROMACS](http://www.gromacs.org/) is a  molecular dynamics simulation program.  In this tutorial, we learn how to run 
 GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in implicit water.  
-![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png, "1CTA Dimer in Water", width=10, height=40)
+![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png)
 
 ## GROMACS tutorial files
 
