@@ -9,7 +9,6 @@ GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in im
 
 ## GROMACS tutorial files
 
-
 It is easiest to start with the `tutorial` command. In the command prompt, type
 	 $ tutorial gromacs # Copies input and script files to the directory tutorial-gromacs.
  
