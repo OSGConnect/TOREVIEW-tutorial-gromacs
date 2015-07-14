@@ -7,7 +7,6 @@
 GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in implicit water.  
 ![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png)
 
-
 ## GROMACS tutorial files
 
 It is easiest to start with the `tutorial` command. In the command prompt, type
