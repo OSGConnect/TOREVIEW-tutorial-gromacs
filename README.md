@@ -53,13 +53,12 @@ As mentioned in the job description file, the executable is `gromacs_job.sh` whi
 The input options ntmpi, ntomp and nt are related to number of mpi threads, number of openMP threads and total number of threads, respectively. The option [deffnm](http://manual.gromacs.org/programs/gmx-mdrun.html) produces output files with an extention of input file `1cta_nvt.tpr`. The option `nsteps` controls the number of MD steps. Here, we choose small number of steps for simplicity, feel free to experiment with this number as you like. 
 
 In the above script, the version 5.0.5 of gromacs package is loaded via module command. To see all available  versions of gromacs, type
-    $ module avail groamcs
-    
-    -------- /cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/Core ------------
-   fftw/3.3.4-gromacs    gromacs/4.6.5    gromacs/5.0.0 (D)    gromacs/5.0.5.cuda    gromacs/5.0.5
 
-  Where:
-   (D):  Default Module
+    $ module avail groamcs
+     -------- /cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/Core ------------
+     fftw/3.3.4-gromacs    gromacs/4.6.5    gromacs/5.0.0 (D)    gromacs/5.0.5.cuda    gromacs/5.0.5
+     Where:
+     (D):  Default Module
 
 
 ## Running the simulation
