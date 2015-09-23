@@ -4,7 +4,7 @@
 ## Overview
 
 [GROMACS](http://www.gromacs.org/) is a  molecular dynamics simulation program.  In this tutorial, we learn how to run 
-GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in implicit water.  
+GROMACS simulations on the OSG. Our example system is a 1CTA protein dimer in implicit water. 
 ![fig 1](https://raw.githubusercontent.com/OSGConnect/tutorial-gromacs/master/Figs/1cta_dimer_blackBG.png)
 
 ## GROMACS tutorial files
@@ -46,11 +46,20 @@ Let us take a look at `gromacs_job.submit` file:
 As mentioned in the job description file, the executable is `gromacs_job.sh` which has the following information 
 
     #!/bin/bash                                                         # this sets up the shell environement (always inlclude this line)
-    module load gromacs/5.0.5                                           # loads the gromacs module
+    module load gromacs/5.0.5                                           # loads the gromacs module version 5.0.5
     gmx mdrun -ntmpi 1 -ntomp 1 -nt 1 -deffnm 1cta_nvt.tpr -nsteps 500  # Calling gmx (GROMACS) to run mdrun on single CPU for the input file 1cta_nvt.tpr
 
 
 The input options ntmpi, ntomp and nt are related to number of mpi threads, number of openMP threads and total number of threads, respectively. The option [deffnm](http://manual.gromacs.org/programs/gmx-mdrun.html) produces output files with an extention of input file `1cta_nvt.tpr`. The option `nsteps` controls the number of MD steps. Here, we choose small number of steps for simplicity, feel free to experiment with this number as you like. 
+
+In the above script, the version 5.0.5 of gromacs package is loaded via module command. To see all available  versions of gromacs, type
+    $ module avail groamcs
+    
+    -------- /cvmfs/oasis.opensciencegrid.org/osg/modules/modulefiles/Core ------------
+   fftw/3.3.4-gromacs    gromacs/4.6.5    gromacs/5.0.0 (D)    gromacs/5.0.5.cuda    gromacs/5.0.5
+
+  Where:
+   (D):  Default Module
 
 
 ## Running the simulation
