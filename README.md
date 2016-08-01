@@ -50,7 +50,7 @@ As mentioned in the job description file, the executable is `gromacs_job.sh` whi
     gmx mdrun -ntmpi 1 -ntomp 1 -nt 1 -deffnm 1cta_nvt.tpr -nsteps 500  # Calling gmx (GROMACS) to run mdrun on single CPU for the input file 1cta_nvt.tpr
 
 
-The input options ntmpi, ntomp and nt are related to number of mpi threads, number of openMP threads and total number of threads, respectively. The option [deffnm](http://manual.gromacs.org/programs/gmx-mdrun.html) produces output files with an extention of input file `1cta_nvt.tpr`. The option `nsteps` controls the number of MD steps. Here, we choose small number of steps for simplicity, feel free to experiment with this number as you like. 
+The input options ntmpi, ntomp and nt are related to number of mpi threads, number of openMP threads and total number of threads, respectively. The option [deffnm](http://manual.gromacs.org/programs/gmx-mdrun.html) produces output files with an extension of input file `1cta_nvt.tpr`. The option `nsteps` controls the number of MD steps. Here, we choose small number of steps for simplicity, feel free to experiment with this number as you like. 
 
 In the above script, the version 5.0.5 of gromacs package is loaded via module command. To see all available  versions of gromacs, type
 
