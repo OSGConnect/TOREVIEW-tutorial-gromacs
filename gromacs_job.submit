@@ -12,6 +12,6 @@ output        = job.output
 error         = job.error
 log           = job.log
 
-requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
+requirements = HAS_MODULES == True
 Queue 1
 
